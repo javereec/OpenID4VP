@@ -3290,7 +3290,7 @@ Note: The `nonce` and `aud` are set to the `nonce` of the request and the Client
 
 The following is a non-normative example of a DCQL query that requests a Verifiable
 Credential in the format `mso_mdoc` with the claims `vehicle_holder` and
-`first_name`:
+`given_name`:
 
 <{{examples/query_lang/simple_mdoc.json}}
 
@@ -3313,13 +3313,13 @@ come from an mDL or a photoid Credential.
 
 The following is a non-normative example of a DCQL query that requests 
 
-- the mandatory claims `last_name` and `date_of_birth`, and
+- the mandatory claims `family_name` and `date_of_birth`, and
 - either the claim `postal_code`, or, if that is not available, both of the claims `locality` and `region`.
 
 <{{examples/query_lang/claims_alternatives.json}}
 
 The following example shows a query that uses the `values` constraints
-to request a Credential with specific values for the `last_name` and `postal_code` claims:
+to request a Credential with specific values for the `family_name` and `postal_code` claims:
 
 <{{examples/query_lang/value_matching_simple.json}}
 
